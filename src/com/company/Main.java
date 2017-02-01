@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("input the patient's surname name:");
         String surname = scanner.next();
-        System.out.println("input the patient's  name:");
+        System.out.println("input the patient's name:");
         String name = scanner.next();
         System.out.println("input patient's last name:");
         String last = scanner.next();

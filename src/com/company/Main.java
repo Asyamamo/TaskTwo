@@ -24,22 +24,21 @@ public class Main {
         System.out.println("input patient's weight:");
         float weight = scanner.nextInt();
         float BMI = weight / height;
+        if (age >= 18)
+            System.out.println("according to age antibiotic dose from 650ml increasing.");
+        else
+            System.out.println("antibiotic dosge under 650ml.");
+        while (BMI <= 0.26) {
+            System.out.println("patient is under weight antibiotic dosge under 650ml.");
+            break;
+        }
         System.out.println("patient's surname:" + surname);
         System.out.println("patient's  name:" + name);
         System.out.println("patient's last:" + last);
         System.out.println("patient's  date of birth:" + date + month + year);
         System.out.println("patient's age:" + age);
         System.out.println("patient's BMI:" + BMI);
-        if (age >= 18)
-            System.out.println("according to age antibiotic dose from 650ml increasing.");
-        else
-            System.out.println("antibiotic dosge under 650ml.");
-        if (BMI <= 0.26)
-            System.out.println("patient is under weight antibiotic dosge under 650ml.");
-
-
     }
-
-        }
+}
 
 
